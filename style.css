@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(230, 100%, 99%);
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    color: hsl(225, 20%, 60%);
+}
+.wrapper{
+    width: 600px;
+    padding: 2rem 0;
+    margin-top: 1rem;
+}
+
+/* header component */
+.container .header{
+    overflow: visible;
+    background-image: url(images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.container .header p{
+    margin-top: 0;
+}
+.container .header h1{
+    color: hsl(227, 35%, 25%);
+}
+.wrapper .container:nth-child(2){
+    box-shadow: 2px 9px 13px 5px rgba(0,0,0,0.13)
+    ;
+    padding-bottom: 1rem;
+}
+/* header component */
+
+/* card % header component */
+.card{
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 1rem 3rem;
+}
+.header-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-card .price{
+    display: flex;
+    align-items: center;
+}
+.discount{
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+    border-radius: 14px;
+}
+/* card & header component */
+
+/* card-footer container */
+.card-footer{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+.card-footer > span{
+    padding: 0 0.4rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(223, 50%, 87%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider2:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider2 {
+    background-color: hsl(174, 86%, 45%);
+  }
+  
+  input:focus + .slider2 {
+    box-shadow: 0 0 1px hsl(223, 50%, 87%);
+  }
+  
+  input:checked + .slider2:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+  
+  /* Rounded sliders */
+  .slider2.round {
+    border-radius: 34px;
+  }
+  
+  .slider2.round:before {
+    border-radius: 50%;
+  }
+  /* card-footer container */
+
+  /* footer */
+
+  .footer{
+      display: flex;
+      width: 100%;
+      background-color: white;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 2px solid #eaeefb;
+      padding: 0rem 2rem;
+    }
+    .list-elements ul{
+        padding: 1rem 0;
+        list-style: none;
+    }
+    .list-elements ul li:nth-child(2){
+        padding: 0.6rem 0;
+    }
+    .list-elements ul li img{
+        padding-right:1rem
+    }
+    .btn a{
+        display: block;
+        background-color: hsl(227, 35%, 25%);
+        padding: 0.8rem 3.5rem ;
+        border: 0;
+        border-radius: 2rem;
+        box-shadow: 0 1px 5px rgba(199, 194, 194, 0.8);
+        transition: all 500ms;
+        text-align: center;
+        text-decoration: 0;
+        color: white;
+    }
+
+
+
+  /* footer */
+
+/* slider */
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+    border-radius: 25px;
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    background-image: url(images/icon-slider.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    background-position: center;
+    width: 45px; /* Set a specific slider handle width */
+    height: 45px; /* Slider handle height */
+    background-color: hsl(174, 86%, 45%);/* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 45px; /* Set a specific slider handle width */
+    height: 45px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+  }
+  
+
+/* slider */
