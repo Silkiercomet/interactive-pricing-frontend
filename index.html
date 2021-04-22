@@ -26,18 +26,21 @@
     <div class="container">
       <div class="card">
         <div class="header-card">
-          <span style=" display: flex;"><div class="" style="min-width: 40px; "><span id="demo" ></span></div> Pageviews</span> <span class="price"><h1 id="number"style="font-size: 3rem; color: black;">$16.00</h1> /month</span>
+          <span style=" display: flex;"><div  style="min-width: 50px; "><span id="demo" ></span>k</div> Pageviews</span> <span class="price desktop"><span style="font-size: 3rem; color: black;" ></span><h1 id="number"style="font-size: 3rem; color: black;">$8.00</h1> /month</span>
         </div>
         <div class="slidecontainer">
           <input type="range" min="10" max="1000" value="10" class="slider" id="myRange">
         </div>
+        <div class="mobile">
+          <span style="font-size: 3rem; color: black;" class="price"></span><h1 id="number-2"style="font-size: 3rem; color: black;">$8.00</h1> /month</span>
+        </div>
         <div class="card-footer">
           <span>Monthly Billing</span> 
           <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="switcher" onclick="checkBox()">
             <span class="slider2 round"></span>
           </label>
-          <span>Yearly Billing</span> <span class="discount">25% discount</span>
+          <span>Yearly Billing</span> <span class="discount">25% <span class="desktop">discount</span> </span>
         </div>
 
       </div>
