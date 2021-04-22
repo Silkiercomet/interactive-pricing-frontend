@@ -25,6 +25,9 @@ body{
     padding: 2rem 0;
     margin-top: 1rem;
 }
+.container{
+  border-radius: 10px;
+}
 
 /* header component */
 .container .header{
@@ -243,3 +246,56 @@ body{
   
 
 /* slider */
+
+/* media queries */
+
+.mobile{
+  display: none;
+}
+
+
+@media (max-width:610px){
+  .wrapper{
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .desktop{
+    display: none;
+  }
+  .header-card .price{
+    display: none;
+  }
+  .mobile .price{
+    display: flex;
+  }
+  .header-card{
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+  }
+  .card-footer{
+    justify-content: center;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .list-elements ul{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+  .btn{
+    padding: 1.2rem 0;
+  }
+
+  .mobile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* media queries */
